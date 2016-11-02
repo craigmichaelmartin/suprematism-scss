@@ -1,0 +1,9 @@
+{
+  "name": "suprematism-scss",
+  "version": "0.0.1",
+  "description": "base scss variables, mixins, etc for suprematism components",
+  "scripts": {
+    "lint": "echo \"No linting yet\"",
+    "pretest": "npm run lint"
+  }
+}
