@@ -10,6 +10,9 @@ npm i -S CINBCUniversal/suprematism-scss
 
 - Setting raw color variables in this repository allow for them to be
   defined once and shared across all the suprematism component repositories.
+- _Colors_ (eg, blue-light) and not _semantic names_ (eg, primary) are defined
+  here, and so can be altered in necessary. Component repo's define semantic
+  names on top of these colors.
 
 
 ### Define variable in this repo, or component repo?
