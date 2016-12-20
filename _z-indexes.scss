@@ -1,0 +1,73 @@
+$z-index-auto:                         auto;
+$z-index-default:                      auto;
+
+
+// ------ Regular Levels ----------------------------------
+
+// Regular z-index levels (range 1,000 - 20,000)
+// This list must be frozen and can never be added to.
+$z-index-level-1:                      1000;
+$z-index-level-2:                      2000;
+$z-index-level-3:                      3000;
+$z-index-level-4:                      4000;
+$z-index-level-5:                      5000;
+$z-index-level-6:                      6000;
+$z-index-level-7:                      7000;
+$z-index-level-8:                      8000;
+$z-index-level-9:                      9000;
+$z-index-level-10:                    10000;
+$z-index-level-11:                    11000;
+$z-index-level-12:                    12000;
+$z-index-level-13:                    13000;
+$z-index-level-14:                    14000;
+$z-index-level-15:                    15000;
+$z-index-level-16:                    16000;
+$z-index-level-17:                    17000;
+$z-index-level-18:                    18000;
+$z-index-level-19:                    19000;
+$z-index-level-20:                    20000;
+
+$z-index-level-lowest:     $z-index-level-1;
+$z-index-level-highest:   $z-index-level-20;
+
+
+// ------ Meta Levels -------------------------------------
+
+// "Meta" z-index levels, for elements of a qualitatively
+// higher layer, eg: modal, popover, dropdown menu.
+// (range 100,000 - 1,000,000)
+// This list must be frozen and can never be added to.
+$z-index-meta-1:                     100000;
+$z-index-meta-2:                     200000;
+$z-index-meta-3:                     300000;
+$z-index-meta-4:                     400000;
+$z-index-meta-5:                     500000;
+$z-index-meta-6:                     600000;
+$z-index-meta-7:                     700000;
+$z-index-meta-8:                     800000;
+$z-index-meta-9:                     900000;
+$z-index-meta-10:                   1000000;
+
+$z-index-meta-lowest:       $z-index-meta-1;
+$z-index-meta-higest:      $z-index-meta-10;
+
+// Semantic names
+// Unlike regular z-index levels (and colors) semantic
+// names for meta elements must be defined at the
+// highest level, not per component but across all.
+$z-index-dropdown-backdrop: $z-index-meta-1;
+$z-index-navbar:            $z-index-meta-2;
+$z-index-dropdown:          $z-index-meta-2;
+$z-index-navbar-fixed:      $z-index-meta-4;
+$z-index-navbar-sticky:     $z-index-meta-4;
+$z-index-modal-backdrop:    $z-index-meta-6;
+$z-index-modal:             $z-index-meta-7;
+$z-index-popover:           $z-index-meta-8;
+$z-index-tooltip:           $z-index-meta-9;
+
+
+// ------ Absolutes ---------------------------------------
+
+// Absoultes (do not use these; included for debugging)
+$z-index-absolute-minimum:      −2147483648;
+$z-index-absoulte-maximum:       2147483647;

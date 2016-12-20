@@ -6,13 +6,26 @@ This repo provides raw variables to be used in the suprematism component reposit
 npm i -S CINBCUniversal/suprematism-scss
 ```
 
-### Rationale
 
+### As relates to colors
 - Setting raw color variables in this repository allow for them to be
   defined once and shared across all the suprematism component repositories.
 - _Colors_ (eg, blue-light) and not _semantic names_ (eg, primary) are defined
   here, and so can be altered in necessary. Component repo's define semantic
   names on top of these colors.
+
+
+### As relates to z-index
+- There are two _types_ of z-index levels: regular and meta.
+- The meta refers to a qualitaviely higher layer than where ui interaction
+  usually occurs. They do not exist in the same realm as typical ui stacking.
+  Examples of meta layers include popovers, tooltips, modals, dropdowns, etc.
+  Meta levels _must_ be shared accross components and so must be defined here.
+- Regular z-index levels could be defined in each component (there is no
+  inherent reason the z-indexes used internally in components need to be
+  parallel). However, rather than each component re-defining its own arbitrary
+  levels, for convenience they are defined here. This saves re-typing, as well
+  as offers familiarity when working across components.
 
 
 ### Define variable in this repo, or component repo?
